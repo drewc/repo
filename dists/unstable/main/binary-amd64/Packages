@@ -1,0 +1,94 @@
+Package: gambc
+Priority: optional
+Section: devel
+Installed-Size: 221
+Maintainer: Drew Crampsie <me@drewc.ca>
+Architecture: amd64
+Version: 4.9.3-1ppa3
+Depends: libc6 (>= 2.2.5), libgambit4 (= 4.9.3-1ppa3), libgambit4-dev (= 4.9.3-1ppa3)
+Recommends: gambc-doc
+Filename: pool/main/g/gambc/gambc_4.9.3-1ppa3_amd64.deb
+Size: 41356
+MD5sum: 2ecc833f5a861c4c0b4a195330dbcfff
+SHA1: 46068bebb63d25d0a50674fdd6200b2583c33ee6
+SHA256: e5d5926b61de5a71dc3cc9988e76421d7f2625e4e7bdb6e4768e50b5ff09f2a3
+SHA512: fca58016d6f46fbb306dc2c896343a8c68c2f30574e18ccb3d6a1b190edd5d8f27dc33a6f9fdb767e3e8fc58e10de03d4f7b11dd077653ca911d436eaee7b090
+Description: Gambit Scheme interpreter and compiler
+ The gambc package includes a Scheme interpreter and a Scheme compiler which
+ can be used to build standalone executables. The thread system is very
+ efficient and can support millions of concurrent processes.
+ .
+ The Gambit system conforms to the R4RS, R5RS and IEEE Scheme standards. The
+ full numeric tower is implemented, including: infinite precision integers
+ (bignums), rationals, inexact reals (floating point numbers), and complex
+ numbers.  Gambit supports a number of extensions to the standards.
+Homepage: http://gambitscheme.org
+
+Package: gambc-doc
+Priority: optional
+Section: doc
+Installed-Size: 2066
+Maintainer: Drew Crampsie <me@drewc.ca>
+Architecture: all
+Source: gambc
+Version: 4.9.3-1ppa3
+Filename: pool/main/g/gambc/gambc-doc_4.9.3-1ppa3_all.deb
+Size: 566572
+MD5sum: 7954fe4a0d47ad43d5b3a0a17df80b49
+SHA1: 412dfcff33466332aaeaca3de76f91c35866a931
+SHA256: ba73dadab077c628892e3b8afb2fd78ed32730f26a6dfeeef84ed0e6244fb4ba
+SHA512: c29592141e5374487c3ea856898b44b30375d5d12b5b6e25099d9d1955cf596a4bd2ebe48954defa50cf2bdf88d5dde0f6b763dcb6c73eeaff9ee89ab5ce899d
+Description: documentation for the Gambit interpreter and compiler
+ The package includes info, .pdf, and text versions of the Gambit manual,
+ a 200+ page document containing a complete description of the interpreter
+ and compiler suite.  Also included are numerous examples, benchmark code,
+ and an implementation of syntax-case for Gambit.
+Multi-Arch: foreign
+Homepage: http://gambitscheme.org
+
+Package: libgambit4
+Priority: optional
+Section: libs
+Installed-Size: 18838
+Maintainer: Drew Crampsie <me@drewc.ca>
+Architecture: amd64
+Source: gambc
+Version: 4.9.3-1ppa3
+Replaces: libgambc4
+Depends: libc6 (>= 2.17), libssl1.1 (>= 1.1.0), libssl-dev
+Breaks: libgambc4
+Filename: pool/main/g/gambc/libgambit4_4.9.3-1ppa3_amd64.deb
+Size: 2654760
+MD5sum: 36dfd8597dfa31dbb75a24c3f26d115b
+SHA1: d4be699bba8fe59caadf04476343ed6beba18cac
+SHA256: 3b371f7e2e9b06b220801e8d634a9062776efb20422be83dc0a38f2a864d3622
+SHA512: e5bafce99a2d9bdf4d12b069abda75c52e3ef5a065ecbfbf14e3bcc2340c23f20b9cd2bf0a7db253f47fd27ee6198219a686233001fc361fcd4205ebde4410cc
+Description: Shared libraries for the Gambit interpreter and compiler
+ The package includes .so, .c and .scm files, which are necessary to
+ run the Gambit interpreter and the Gambit compiler.
+Homepage: http://gambitscheme.org
+Multi-Arch: same
+
+Package: libgambit4-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 396
+Maintainer: Drew Crampsie <me@drewc.ca>
+Architecture: amd64
+Source: gambc
+Version: 4.9.3-1ppa3
+Replaces: libgambc4-dev
+Depends: libgambit4 (= 4.9.3-1ppa3)
+Breaks: libgambc4-dev
+Filename: pool/main/g/gambc/libgambit4-dev_4.9.3-1ppa3_amd64.deb
+Size: 52788
+MD5sum: b063ed6c86c8f10c662853d923605f7a
+SHA1: c243233e0aa67566bc96a359499f49ba1051725f
+SHA256: 6f0e9bccabeae017c5a6df1a595d45d4d7ec2bf09f531d2725ca024eff773c37
+SHA512: 5be82ce73dfb7bf5211f09d5146dba20052602fd771db4ffd1a69af5d60bd287554417e4319122560e44351589cb9b5e6cadcfdb00a85809adb393ce9032d626
+Description: Header file and link for the Gambit shared library
+ The package includes gambit.h and the libgambit.so, libgambitgsi.so
+ and libgambitgsc.so links.
+Multi-Arch: same
+Homepage: http://gambitscheme.org
+
