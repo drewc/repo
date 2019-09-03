@@ -43,8 +43,33 @@ Description: documentation for the Gambit interpreter and compiler
  a 200+ page document containing a complete description of the interpreter
  and compiler suite.  Also included are numerous examples, benchmark code,
  and an implementation of syntax-case for Gambit.
-Multi-Arch: foreign
 Homepage: http://gambitscheme.org
+Multi-Arch: foreign
+
+Package: gerbil-snapshot
+Priority: optional
+Section: devel
+Installed-Size: 54950
+Maintainer: Drew Crampsie <me@drewc.ca>
+Architecture: amd64
+Version: 0.16.0-2snapshot-DEV-20-cd16549
+Depends: gambc (>= 4.9.0)
+Filename: pool/main/g/gerbil-snapshot/gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549_amd64.deb
+Size: 6993272
+MD5sum: 6304c65833c988fcd6b99224ee41b18f
+SHA1: 403dfdcfa43b79a35425e248a28acf3fde4f35c4
+SHA256: eeea2264c5929d022cd382db5198207bba0d4cee75c4ef4f68840bd9b31383bd
+SHA512: f59af0442c2cf3e8d278f72116f8da815f0866973cb22f25f39723535409e308155d976de7b15e0ab5c97afc8e8319436f36861b0940dae2f429e85814cca3d1
+Description: Gerbil is an opinionated dialect of Scheme designed for Systems
+ Programming, with a state of the art macro and module system on top of the
+ Gambit runtime.
+ .
+ The macro system is based on quote-syntax, and provides the full meta-syntactic
+ tower with a native implementation of syntax-case. It also provides a
+ full-blown module system, similar to PLT Scheme (sorry, Racket) modules. The
+ main difference from Racket is that Gerbil modules are single instantiation,
+ supporting high performance ahead of time compilation and compiled macros.
+Homepage: https://github.com/vyzo/gerbil
 
 Package: libgambit4
 Priority: optional
@@ -89,6 +114,6 @@ SHA512: 5be82ce73dfb7bf5211f09d5146dba20052602fd771db4ffd1a69af5d60bd287554417e4
 Description: Header file and link for the Gambit shared library
  The package includes gambit.h and the libgambit.so, libgambitgsi.so
  and libgambitgsc.so links.
-Multi-Arch: same
 Homepage: http://gambitscheme.org
+Multi-Arch: same
 

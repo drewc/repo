@@ -20,13 +20,42 @@ Checksums-Sha256:
  3f84929ea0e07484a06c62b9414559d1e28dd26f915501559779053b27f29f43 9988 gambc_4.9.3-1ppa3.debian.tar.xz
  9a2f17dbbf35167236eadd63b76f52dbc13eda52fba52ad31680b4d15816f980 1882 gambc_4.9.3-1ppa3.dsc
  ad7409dfff540f63316447f9c870d27322be424e7b1825a5f9b197c7c83420f1 12993585 gambc_4.9.3.orig.tar.gz
-Checksums-Sha1:
- 8916dc1990bf049ac98e790a3683eb49bdf0641b 9988 gambc_4.9.3-1ppa3.debian.tar.xz
- 5e9f6f546eb74613f3b35308f3a3d656534e537f 1882 gambc_4.9.3-1ppa3.dsc
- 937e7e4b20c02e299bfb183ba52cb6c63d28395d 12993585 gambc_4.9.3.orig.tar.gz
-Homepage: http://gambitscheme.org
 Checksums-Sha512:
  a86e5584090186e68bc37aaa282bc18403bfaa96da235a4d8da70c2a1067e0c4f15862039afb97755235cec3af022dab397dd99e7ff270c6bf4e5a1d705515c3 9988 gambc_4.9.3-1ppa3.debian.tar.xz
  65d271884afcc2b09a65e100dbbae240cd4ef9634e7cde3f362c27992544c577e139d6d83b5636193b3b011d48e9e9d1886c541bac7d6904df6de3edc084cbce 1882 gambc_4.9.3-1ppa3.dsc
  d138c490ee02882eb67c220de81af8674e3929a292d36d3f2a8f8e33b3aba7fbfc22f7c705c2bc1365b252e58f01e7f867b1dd7fd5317cccc44d4f46a5cfa488 12993585 gambc_4.9.3.orig.tar.gz
+Homepage: http://gambitscheme.org
+Checksums-Sha1:
+ 8916dc1990bf049ac98e790a3683eb49bdf0641b 9988 gambc_4.9.3-1ppa3.debian.tar.xz
+ 5e9f6f546eb74613f3b35308f3a3d656534e537f 1882 gambc_4.9.3-1ppa3.dsc
+ 937e7e4b20c02e299bfb183ba52cb6c63d28395d 12993585 gambc_4.9.3.orig.tar.gz
+
+Package: gerbil-snapshot
+Binary: gerbil-snapshot
+Version: 0.16.0-2snapshot-DEV-20-cd16549
+Maintainer: Drew Crampsie <me@drewc.ca>
+Build-Depends: debhelper, texinfo, libssl-dev, gambc, zlib1g-dev, libsqlite3-dev, libyaml-dev, libxml2-dev, libleveldb-dev, libmysqlclient-dev, liblmdb-dev
+Architecture: any
+Standards-Version: 4.0.1
+Format: 3.0 (quilt)
+Directory: pool/main/g/gerbil-snapshot
+Files:
+ 0b4992e3d67bcbc9dd798cf9e1604f0f 10172 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.debian.tar.xz
+ ca2b0da7687244606a706c30c745ab3c 2057 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.dsc
+ 4cfaa0f977531946c1f0c6cecc422a11 1398739 gerbil-snapshot_0.16.0-2snapshot-DEV-20.orig.tar.gz
+Checksums-Sha1:
+ 59dcafd8e103f8b41ebccaf065b3575997aeecd2 10172 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.debian.tar.xz
+ 0e30f59f9f6af5045024a9a8a814a27508a326af 2057 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.dsc
+ 4284f6eba8c503669669cd48edf28dd6ce995c76 1398739 gerbil-snapshot_0.16.0-2snapshot-DEV-20.orig.tar.gz
+Checksums-Sha512:
+ b79a2f9ce119dbdd4ce7f5f9d5e17f8d64d76b08734d7dbd0eb91a158b0394f1a15428fcfeec5cb5647ca9a71d7bcf01ffea139593093b5393a636e18bdd3d28 10172 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.debian.tar.xz
+ f7c6715ef96b2ba92f4668892afb4c99868427d1ddea5047f663f74ebb306252c808a46daae5d5300c92ea70260046d1e2dca7e25b78b771a3deb340acb43ca8 2057 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.dsc
+ c77984f07b5fa5d707438393c348154633fc5fbf82018aa0e6342643e12087c5a94d7f27cafab3874849ae6e03c3f72554fe15bccdeea381c73053636f48c958 1398739 gerbil-snapshot_0.16.0-2snapshot-DEV-20.orig.tar.gz
+Checksums-Sha256:
+ ade287e1add49a3257e5db01ba20dbf87f71d72d22e2994003def47c80374a15 10172 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.debian.tar.xz
+ 7be4f67ddacf876687fe0815c7a6417a1eb607700ef1146bb0e8100312efbbc5 2057 gerbil-snapshot_0.16.0-2snapshot-DEV-20-cd16549.dsc
+ e13cc000c1bb39d83a63d7a5efb8040a2439f67c306a98606f8b849815cf28bb 1398739 gerbil-snapshot_0.16.0-2snapshot-DEV-20.orig.tar.gz
+Homepage: https://github.com/vyzo/gerbil
+Package-List:
+ gerbil-snapshot deb devel optional arch=any
 
