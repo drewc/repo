@@ -1,0 +1,22 @@
+
+#+begin_src shell
+DREWC_APT_REPO="https://raw.githubusercontent.com/drewc/repo/master"
+DREWC_SOURCES="/etc/apt/sources.list.d/drewc-repo.list"
+
+sudo apt-get install apt-transport-https
+
+# Make the sources.list.d
+
+echo deb $DREWC_APT_REPO unstable main | sudo tee $DREWC_SOURCES
+echo deb-src $DREWC_APT_REPO unstable main| sudo tee -a $DREWC_SOURCES
+
+
+# Add the GPG public key 
+
+curl $DREWC_APT_REPO/Release.key | sudo apt-key add -
+
+
+# And Update
+sudo apt-get update
+#+end_src
+
